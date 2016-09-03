@@ -1,0 +1,41 @@
+#include "formatted_console_io_v19.h" 
+#include <iostream>
+#include <fstream>
+#include <cstdlib>
+
+using namespace std;
+
+int main()
+{
+	startCurses();	
+	int i;
+	//mvaddstr( 10, 20, "ABC" );
+	//refresh();
+	//for( i=0; i<1000; i++)
+	//	{
+			setColor( COLOR_WHITE, COLOR_BLUE, true );
+			printStringAt(40,3,  "                                   ", "CENTER" );
+			printStringAt(40,4,  "                                   ", "CENTER" );
+			printStringAt(40,5,  "                                   ", "CENTER" );
+			printStringAt(40, 6, "        MENU SELECTIONS            ", "CENTER" );
+			printStringAt(40, 7, "        ---------------            ", "CENTER" );
+			printStringAt(40,8,  "                                   ", "CENTER" );
+			printStringAt(23, 9, "        1. Set <D>ifficulty        ", "LEFT" );
+			printStringAt(23, 10,"        2. <P>lay Game             ", "LEFT" );
+			printStringAt(23, 11,"        3. <S>how Top Scores       ", "LEFT");
+			printStringAt(23,12, "        4. <Q>uit program          ", "LEFT" );
+			printStringAt(40,13, "                                   ", "CENTER" );
+			printStringAt(40,14, "                                   ", "CENTER" );
+			printStringAt(40,15, "                                   ", "CENTER" );
+			printStringAt(40,16, "                                   ", "CENTER" );
+			printStringAt(40,17, "                                   ", "CENTER" );
+			promptForCharAt(23,14,"        Enter Selection: ");
+			
+	//	}
+	cout<<endl;
+	system("pause");
+
+
+
+	return 0;
+}

@@ -1,0 +1,20 @@
+Programming Assignment Rubric
+
+Rubric will be applied to step 6 of the program
+
+Program compiles without errors, and runs: +4
+specified functions correctly implemented and applied: +4
+at least eight functions
+clear and effective modularity applied to all functions
+processing operations separated from display operations
+Correct file access and 2-D array loading operations: +4
+must be able to handle any input data file
+Correct function that finds index of substring: +4
+Correct function that removes substring at index: +4
+Correct function that inserts substring at index: +4
+Correct monitor display operations: +3
+Correct resonses to error conditions: +3
+program must not continue any further processing
+Correctly annotated Screen Shots document, with specified files: +5
+Also remember: Use of a string class/object anywhere in your program (General Usage Rubric: -3 per occasion)
+ALL strings must be c-style strings

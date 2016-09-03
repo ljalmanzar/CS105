@@ -1,0 +1,32 @@
+#include "formatted_console_io_v19.h" 
+#include <iostream>
+#include <fstream>
+#include <cstdlib>
+
+using namespace std;
+
+int main()
+{
+	startCurses();
+	
+	setColor( COLOR_WHITE, COLOR_BLUE, true );
+	printStringAt(40, 9, "                                                     ", "CENTER" );
+	printStringAt(40, 10, "             Game Difficulty Entry Module            ", "CENTER" );
+	printStringAt(40, 11, "                                                     ", "CENTER" );
+	printStringAt(40, 12, "                                                     ", "CENTER" );
+	//printStringAt(20, 12, " Enter Game Difficulty <1-3>: ", "LEFT" );
+	printStringAt(40, 13, "                                                     ", "CENTER" );
+	promptForIntAt( 20, 12, " Enter Game Difficulty <1-3>: " );
+	
+
+	cout<<endl<<endl<<endl;		
+	system ("pause");
+	
+	endCurses();
+	
+
+
+
+	return 0;
+}
+	
